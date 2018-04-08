@@ -1,6 +1,6 @@
 <!DOCTYPE html >
 <!-- #1 #structure #document -->
-<html>
+<html lang="en">
 
 <head>
 
@@ -15,10 +15,9 @@
 </head>
 
 <body>
-
     <!-- channel area -->
     <!-- #1 #channels #app-bar -->
-    <div>
+    <div id="app-bar" >
         <h1>
             <!-- the chatter app logo -->
             <span>
@@ -35,7 +34,7 @@
                 <span>
                     <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="low channel"> </span>
             </li>
-            <li>#SevenContinents
+            <li class="current">#SevenContinents
                 <span>
                     <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="hot channel"> </span> </li>
             <li>#KillerApp
@@ -55,8 +54,8 @@
 
 
     <!-- #1 #channels #buttons -->
-    <div>
-        <button>
+    <div id="tab-bar">
+        <button class="selected">
             <span>
                 <img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="new channels"> </span> new</button>
         <button>
@@ -79,7 +78,7 @@
         </small>
     </h1>
 
-    <div>
+    <div class="message own-message">
         <!-- #1 #chat #metadata contains location, weekday, day, and time -->
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -96,7 +95,7 @@
         <button>+5 min.</button>
     </div>
 
-    <div>
+    <div class="message">
         <!-- #1 #chat #metadata contains location, weekday, day, and time -->
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -113,9 +112,8 @@
         <button>+5 min.</button>
     </div>
 
-    <div>
-
-        <!-- #1 #chat #metadata contains location, weekday, day, and time -->
+    <div class="message">
+       <!-- #1 #chat #metadata contains location, weekday, day, and time -->
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
             <a href="https://map.what3words.com/thus.best.dishes" target="_blank">
@@ -131,7 +129,7 @@
         <button>+5 min.</button>
     </div>
 
-    <div>
+    <div class="message">
         <!-- #1 #chat #metadata contains location, weekday, day, and time -->
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -147,7 +145,8 @@
         <!-- #1 #chat #button subsequent to each message -->
         <button>+5 min.</button>
     </div>
-    <div>
+
+    <div class="message">
         <!-- #1 #chat #metadata contains location, weekday, day, and time -->
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -163,7 +162,8 @@
         <!-- #1 #chat #button subsequent to each message -->
         <button>+5 min.</button>
     </div>
-    <div>
+    
+    <div class="message">
         <!-- #1 #chat #metadata contains location, weekday, day, and time  -->
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->

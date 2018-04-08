@@ -9,67 +9,98 @@
       */
 
 /*global styles */
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
-    /* #2 #font #faces */
-    font-family: 'Arial', sans-serif;
- 
+    font-family: Roboto, 'Arial', sans-serif;
+    margin:0;
+    padding:0;
 }
-
 body {
-    /* #2 #colorful #background */
     background-color: #F5F5F5;
 }
 
-h1 {
-    /* #2 #colourful #app-bar */
+button, strong {
+    text-transform: uppercase;
+}
+
+/* app-bar */
+#app-bar , h1{
     background-color: #3F51B5;
     color: white;
 }
 
-div {
-    background-color: #ffffff;
-    width: 80%;
+/* Channels Lists */
+div >ul{
+    background-color: gray;
 }
-
-div a {
-    color: black;
-}
-
-button {
-    /* #2 #colourful #plusfive */
-    background-color: #CDDC39;
-    color: black;
-    /* #2 #font capital #letters */
-    text-transform: uppercase;
-}
-
-/*styles for channel area*/
-
-div ul {
-    list-style-type: none;
-    background-color: #ffffff;
-}
-
-/*styles for chat area*/
-
-p {
-    /* #2 #colorful #channelandchat */
+div >ul >li {
     background-color: white;
+    padding: 16px;
+    font-size: 16px;
+    list-style-type: none;
+    box-sizing: border-box;
+    border-bottom: solid 0.1px gray;  
+    
+}
+.current {
+    border-left: 4px solid #3F51B5;
+    color: #3F51B5;
+}
+div > ul  * img  {
+    vertical-align: middle;
+}
+/* Tab-Bar */
+#tab-bar{
+    background-color: #fff;
+    color: black; 
+    border: none;
+    font-size: 13px;
+    
+}
+#tab-bar > button {
+    background-color: white;
+    width: 33%;
+    height: 72px;
+    padding:16px;
+}
+#tab-bar > button > span> img{
+    display: block;
+    margin:auto;
+    padding-bottom:4px;
+}
+#tab-bar > .selected {
+    border-bottom: 4px solid  #3F51B5;
+    color :  #3F51B5;
 }
 
-strong {
-    /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
+/* Chat Messages */
+.message{
+    width:80%;
+    margin-bottom: 8px;
+    font-size: medium;
+    background-color: #fff;
+    padding: 16px;
+    margin-left:2.5%;
+}
+.message > button{
+    background-color: #CDDC39;
+    color: #000;
     text-transform: uppercase;
 }
 
-h3 {
-    /* #2 #font #metadata is now medium */
-    font-size: medium;
-}
-
-em {
+.message > em {
     /* #2 #font #remaining overrides the default italic appearance of em elements*/
     font-size: larger;
     font-style: normal;
 }
+
+
+.message > h3 > a{
+    /* #2 #font #metadata is now medium */
+    font-size: medium;
+    color :#000;
+} 
+.own-message{
+    margin-left: 17.5%;
+}
+
